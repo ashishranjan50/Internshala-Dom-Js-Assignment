@@ -1,0 +1,165 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+header .description {
+  font-size: 1em;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+form {
+  flex: 1;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  font-size: 1.8em;
+  color: #2980b9;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  font-size: 1em;
+  color: #34495e;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #27ae60;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218c53;
+}
+
+#studentList {
+  flex: 1.5;
+  max-height: 80vh; /* Sets the max height relative to the viewport height */
+  overflow-y: auto; /* Adds a scrollbar when the content exceeds the max height */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#studentList h2 {
+  font-size: 1.8em;
+  color: #2980b9;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Ensure the table itself also supports scrolling */
+}
+
+th,
+td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+  font-size: 1.1em;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 8px 12px;
+  font-size: 0.9em;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.actions .edit {
+  background-color: #f39c12;
+  color: white;
+}
+
+.actions .edit:hover {
+  background-color: #e67e22;
+}
+
+.actions .delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.actions .delete:hover {
+  background-color: #c0392b;
+}
